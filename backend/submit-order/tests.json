@@ -1,0 +1,23 @@
+{
+  "tests": [
+    {
+      "name": "Сохранение заявки",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Тест",
+        "phone": "+79120000000",
+        "from": "ул. Ленина 1",
+        "to": "ул. Мира 5",
+        "comment": "",
+        "truck": "gazel",
+        "distance": "В пределах города",
+        "price": 1500,
+        "loaders": false
+      },
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

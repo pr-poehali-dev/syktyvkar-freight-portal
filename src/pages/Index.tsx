@@ -91,8 +91,19 @@ export default function Index() {
     km <= 30 ? t.base : Math.round(t.base + km * t.perKm);
   const priceWithLoaders = basePrice + (loaders ? 2000 : 0);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    await fetch("https://functions.poehali.dev/09eadf23-2797-49d3-868d-a7e9a7961598", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...formData,
+        truck: TRUCKS[truck].label,
+        distance,
+        price: priceWithLoaders,
+        loaders,
+      }),
+    });
     setSubmitted(true);
   };
 
