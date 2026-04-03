@@ -183,7 +183,7 @@ export default function Index() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(https://cdn.poehali.dev/projects/e2ae37cd-db92-46c9-83d6-6ed5ab037516/files/c9b788f0-2a40-42bb-ae63-ed91f5832714.jpg)`,
+            backgroundImage: `url(https://cdn.poehali.dev/projects/e2ae37cd-db92-46c9-83d6-6ed5ab037516/files/2e59e813-481f-4667-accf-876ebafdb470.jpg)`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0d0f14] via-[#0d0f14]/80 to-[#0d0f14]/30" />
